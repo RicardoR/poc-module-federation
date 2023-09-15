@@ -3,5 +3,8 @@
 <p><a routerLink="/mod1Feat2">Aplicación 1 Módulo 2</a></p>
 <p><a routerLink="/mod2Feat1">Aplicación 2 Módulo 1</a></p>
 
+<input type="text" [(ngModel)]="dataToStore">
+<button (click)="storeData()">Añadir data a local Storage</button>
+
 
 <router-outlet></router-outlet>
