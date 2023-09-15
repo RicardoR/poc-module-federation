@@ -2,5 +2,7 @@
 
 <p><a routerLink="invoices">Ir a las facturas</a></p>
 
+<button (click)="getDataFromLocalStorage()" > Ver lo que hay en el localStorage </button>
+<ng-container *ngIf="data"> <p>Lo que hay es: {{data}} </p> </ng-container>
 
 <router-outlet></router-outlet>

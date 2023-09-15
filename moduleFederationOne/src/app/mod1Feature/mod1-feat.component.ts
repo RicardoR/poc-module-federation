@@ -8,6 +8,11 @@ import { Component } from '@angular/core';
   ]
 })
 export class mod1FeatComponent  {
+  data!: string;
 
- 
+  getDataFromLocalStorage() {
+    this.data = localStorage.getItem('whatever') ?? '';
+  }
+
+
 }
