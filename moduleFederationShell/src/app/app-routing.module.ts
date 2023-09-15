@@ -8,7 +8,7 @@ const routes: Routes = [
     loadChildren: () => 
         loadRemoteModule({
           type: 'module',
-          remoteEntry: 'http://localhost:4201/mod1Feat1.js',
+          remoteEntry: 'http://localhost:4201/modFedOne.js',
           exposedModule: './Module'
         })
             .then(m => m.Mod1FeatModule)
@@ -18,7 +18,7 @@ const routes: Routes = [
     loadChildren: () => 
         loadRemoteModule({
           type: 'module',
-          remoteEntry: 'http://localhost:4201/mod1Feat1.js',
+          remoteEntry: 'http://localhost:4201/modFedOne.js',
           exposedModule: './Module2'
         })
             .then(m => m.Mod1Feat2Module)
@@ -28,7 +28,7 @@ const routes: Routes = [
     loadChildren: () => 
         loadRemoteModule({
           type: 'module',
-          remoteEntry: 'http://localhost:4202/mod2Feat1.js',
+          remoteEntry: 'http://localhost:4202/modFedTwo.js',
           exposedModule: './Module'
         })
         .then(m => m.Mod2FeatModule)

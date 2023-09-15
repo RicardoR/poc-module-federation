@@ -29,8 +29,8 @@ module.exports = {
         library: { type: "module" },
 
         // For remotes (please adjust)
-        name: "mod2Feat1.js",
-        filename: "mod2Feat1.js",
+        name: "modFedTwo.js",
+        filename: "modFedTwo.js",
         exposes: {
             './Module': './/src/app/mod2Feature/mod2-feat.module.ts',
         },
